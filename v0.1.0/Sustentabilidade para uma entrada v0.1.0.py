@@ -113,14 +113,19 @@ while True:
     else:
         print("\n Invalid option")
 
+
 #==========================================================================#
 #==========================================================================#
+
 
 # RANKING OF EACH PARAMETER
 print("\n\n =================================================================")
 print("\n\n SUSTENTABILITY")
 
+#==========================================================================#
+
 # WATER CONSUMPTION
+
 if (water_consumption < 150):
     print("\n Water consumption: High sustentability")
 elif (water_consumption >= 150 and water_consumption <= 200):
@@ -128,7 +133,10 @@ elif (water_consumption >= 150 and water_consumption <= 200):
 else: 
     print("\n Water consumption: Low sustentability")
 
+#==========================================================================#
+
 # POWER CONSUMPTION
+
 if (power_consumption < 5):
     print("\n Power consumption: High sustentability")
 elif (power_consumption >= 5 and power_consumption <= 10):
@@ -136,7 +144,10 @@ elif (power_consumption >= 5 and power_consumption <= 10):
 else:
     print("\n Power consumption: Low sustentability")
 
+#==========================================================================#
+
 # GENERATION RECYCLABLE TRASH
+
 if (percentage_trash > 50):
     print("\n Generation of recyclable trash: High sustentability")
 elif (percentage_trash <= 50 and percentage_trash >= 20):
@@ -144,7 +155,10 @@ elif (percentage_trash <= 50 and percentage_trash >= 20):
 else:
     print("\n Generation of recyclable: Low sustentability")
 
+#==========================================================================#
+
 # MEANS OF TRANSPORTATION USED
+
 if (transportation == 1):
     print("\n Means of transportation: High sustentability")
 elif (transportation == 2):
