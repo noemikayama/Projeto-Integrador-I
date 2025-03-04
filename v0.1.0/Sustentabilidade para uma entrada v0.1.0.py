@@ -119,6 +119,8 @@ while True:
 
 
 # RANKING OF EACH PARAMETER
+
+
 print("\n\n =================================================================")
 print("\n\n SUSTENTABILITY")
 
