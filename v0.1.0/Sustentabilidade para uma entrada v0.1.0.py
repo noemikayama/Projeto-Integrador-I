@@ -40,7 +40,7 @@ while True:
 # Get amount of water consumed
 
 while True:
-    water_consumption = float(input("\n\n Insert amount of water consumed today in liters: "))
+    water_consumption = float(input("\n\n Insert amount of water consumed today approximately in liters: "))
 
     # Checking if value is valid
     if (water_consumption >= 0):
