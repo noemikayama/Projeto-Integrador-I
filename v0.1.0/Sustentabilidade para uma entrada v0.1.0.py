@@ -45,7 +45,7 @@ while True:
     # Checking if value is valid
     if (water_consumption >= 0):
         print("\n Valid amount")
-        break
+        break #Goes to next part
     else:
         print("\n Invalid amount")
 
@@ -59,7 +59,7 @@ while True:
     # Checking if value is valid 
     if (power_consumption >=0):
         print("\n Valid amount")
-        break
+        break #Goes to next part
     else:
         print("\n Invalid amount")
 
@@ -74,7 +74,7 @@ while True:
     # Checking if value is valid 
     if (trash_total_kg >=0):
         print("\n Valid amount")
-        break
+        break #Goes to next part
     else:
         print("\n Invalid amount")
 
@@ -88,7 +88,7 @@ while True:
     # Checking if value is valid 
     if (percentage_trash >=0 and percentage_trash<=100):
         print("\n Valid percentage")
-        break
+        break #Goes to next part
     else:
         print("\n Invalid percentage")
 
@@ -99,17 +99,20 @@ while True:
 # MEANS OF TRANSPORTATION USED
 
 print("\n\n MEANS OF TRANSPORTATION:")
-print("\n 1 - Bicycle, public transportation or electric transportation")
-print("\n 2 - Mixed used of public and private transportation")
-print("\n 3 - Exclusive use of fossil fuel transportation")
+print("\n 1 - Public transportation (bus, subway, train)")
+print("\n 2 - Bicycle")
+print("\n 3 - Walking")
+print("\n 4 - Car (fossil fuel)")
+print("\n 5 - Electric car")
+print("\n 6 - Shared ride")
 
 while True:
-    transportation = int(input("\n\n Insert 1, 2 or 3 for the transportation used today: "))
+    transportation = int(input("\n\n Insert 1, 2, 3, 4, 5 or 6 for the transportation used today: "))
 
        # Checking if value is valid 
-    if (transportation >= 1 and transportation <= 3):
+    if (transportation >= 1 and transportation <= 6):
         print("\n Valid option")
-        break
+        break #Goes to next part
     else:
         print("\n Invalid option")
 
@@ -161,9 +164,9 @@ else:
 
 # MEANS OF TRANSPORTATION USED
 
-if (transportation == 1):
+if (transportation == 2 or transportation == 3 or transportation == 5):
     print("\n Means of transportation: High sustentability")
-elif (transportation == 2):
+elif (transportation == 1 or transportation == 6):
     print("\n Means of transportation: Moderate sustentability")
 else:
     print("\n Means of transportation: Low sustentability")
